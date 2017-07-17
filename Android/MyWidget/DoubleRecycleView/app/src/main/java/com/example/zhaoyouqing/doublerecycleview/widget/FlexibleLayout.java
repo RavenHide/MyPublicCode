@@ -32,7 +32,16 @@ public abstract class FlexibleLayout extends LinearLayout {
         Normal, Empty, Loading, NetWorkErro
     }
     public FlexibleLayout(Context context) {
-        super(context);
+        this(context, null, 0);
+
+    }
+
+    public FlexibleLayout(Context context, @Nullable AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public FlexibleLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
         setOrientation(VERTICAL);
         setClipToPadding(true);
         setFitsSystemWindows(true);
@@ -44,14 +53,6 @@ public abstract class FlexibleLayout extends LinearLayout {
         if(BuildConfig.DEBUG){
             Log.d("count---", String.valueOf(mSuccessView.getChildCount()));
         }
-    }
-
-    public FlexibleLayout(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs, -1);
-    }
-
-    public FlexibleLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
     }
 
     public abstract ViewGroup initNormalView();
