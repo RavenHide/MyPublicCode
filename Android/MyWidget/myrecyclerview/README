@@ -1,0 +1,9 @@
+自定义的recyclerview，支持上拉和下拉刷新
+使用时注意事项
+  HeaderAndFooterWrapper.addHeaderView() 或者 HeaderAndFooterWrapper.addHeaderView()
+  然后recyclerview.setRefreshCallBack(xx) recyclerview.setLoadStatueCallBack(xx)
+  
+可以通过继承BaseStatueCallBack来管理脚布局和头布局的样式，以及各状态对应的样式
+
+适配器使用万能适配器QuickAdapter
+如果想要添加头尾布局则使用其子类HeaderAndFooterWrapper则可
