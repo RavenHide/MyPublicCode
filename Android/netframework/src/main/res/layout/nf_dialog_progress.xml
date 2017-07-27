@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <View
+        android:id="@+id/nf_progress_1"
+        android:layout_width="@dimen/progress_item"
+        android:layout_height="@dimen/progress_item"
+        android:background="@drawable/nf_dialog_progress_item" />
+
+    <View
+        android:id="@+id/nf_progress_2"
+        android:layout_width="@dimen/progress_item"
+        android:layout_height="@dimen/progress_item"
+        android:background="@drawable/nf_dialog_progress_item" />
+
+    <View
+        android:id="@+id/nf_progress_3"
+        android:layout_width="@dimen/progress_item"
+        android:layout_height="@dimen/progress_item"
+        android:background="@drawable/nf_dialog_progress_item" />
+
+    <View
+        android:id="@+id/nf_progress_4"
+        android:layout_width="@dimen/progress_item"
+        android:layout_height="@dimen/progress_item"
+        android:background="@drawable/nf_dialog_progress_item" />
+
+    <View
+        android:id="@+id/nf_progress_5"
+        android:layout_width="@dimen/progress_item"
+        android:layout_height="@dimen/progress_item"
+        android:background="@drawable/nf_dialog_progress_item" />
+
+</LinearLayout>
